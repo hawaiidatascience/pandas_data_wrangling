@@ -1,0 +1,8 @@
+unique_id,doctor_id,specialty,medication,nb_beneficiaries,spending
+# This dataset was made publicly available on the Centers 
+# for Medicare & Medicaid Services website
+AB789982,1952310666,Psychiatry,CLONAZEPAM,226,"$1,848.88"
+AV967778,1952310666,Psychiatry,DIAZEPAM,103,$662.87
+CC128705,1298765423,Cardiology,NADOLOL,13,
+GH890091,1346358827,Family,HYDROCODONE,331,"$8,511.14"
+YY219322,1548247315,Psychiatry,ALPRAZOLAM,28,"$1,964.49"
