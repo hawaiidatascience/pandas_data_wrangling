@@ -1,0 +1,4 @@
+,Visitor Arrival Total,Visitor Arrival International
+1966, 834732, 205168
+1967, 1124012, 295163
+1968, 1313706, 360885
