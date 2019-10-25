@@ -61,6 +61,9 @@ The Juptyer Notebooks contain self contained "chapter" explanations of the conce
 OR
 you can use Anaconda on your own computer and download the materials from this link (<https://github.com/hawaiidatascience/pandas_data_wrangling/archive/master.zip>) - this avenue allows you to keep the changes you make to any of the notebooks as you work through the course at your own pace.
 
+Do Note that when running code cells within the training materials you will need to run the cells in order starting at the top of a notebook since the operations can rely on the execution of previous cells as you get further down the notebook.  (so if you run into an error be sure you have run all the code cells that came before – especially the loading of pandas).
+
+
 #### 2.) Data Camp courses.
 
 The Data Camp track that compliments the Jupyter Notebook materials is "Data Wrangling in Python" (<https://www.datacamp.com/tracks/custom-data-wrangling-in-python>).  This track has four course that cover the same materials as the Jupyter Notebooks with short videos, slides and small Exercises.
