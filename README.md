@@ -1,8 +1,6 @@
 
+![alt text](https://github.com/hawaiidatascience/pandas_data_wrangling/blob/master/images/hidsi-header.png "Hawaii Data Science Institute")
 # Introduction to the `pandas` `Python` Package For Data Wrangling
-
-
-
 
 ## Pre-requisites
 
@@ -51,14 +49,16 @@ Here you will learn the basics of using Python and the Pandas library for loadin
 To get started we will be using learning materials in two formats:
 
 1.) Jupyter Notebooks with sample datasets. (it is assumed you are familiar with Jupyter from module 0)
+
 2.) Data Camp courses.
 
 The Juptyer Notebooks contain self contained "chapter" explanations of the concepts and along with executable code examples that you can run and modify to explore how Python and pandas work. In addition to the "chapters" there are notebooks that have Exercise solutions from each "chapter" as well as Practicals for each "chapter" to bring all the concepts together.  In order to access the Jupyter notebook materials you can either use this URL(https://mybinder.org/v2/gh/hawaiidatascience/pandas_data_wrangling/master) that links to a cloud hosted Jupyterhub workspace. NOTE that this is only a temporary workspace and will disappear once you disconnect from it.
 OR
 you can use Anaconda on your own computer and download the materials from this link (https://github.com/hawaiidatascience/pandas_data_wrangling/archive/master.zip) - this avenue allows you to keep the changes you make to any of the notebooks as you work through the course at your own pace.
 
-The Data Camp track that compliments the Jupyter Notebook materials is "Data Wrangling in Python" (https://www.datacamp.com/tracks/custom-data-wrangling-in-python).  This track has four course that cover the same materials as the Jupyter Notebooks with short videos, slides and small Exercises that
+The Data Camp track that compliments the Jupyter Notebook materials is "Data Wrangling in Python" (https://www.datacamp.com/tracks/custom-data-wrangling-in-python).  This track has four course that cover the same materials as the Jupyter Notebooks with short videos, slides and small Exercises.
 
+The Data Camp materials may be more remedial than the Jupyter Notebooks so try them both to see what works best for you.
 
 ## Let begin
 
@@ -77,7 +77,7 @@ This chapter introduces the Python pandas modules and its primary data structure
 * Learner will be able to: Create Series and DataFrames, Index Series and DataFrames, Access data within Series and DataFrames, Modify data within Series and DataFrames, Add and Modify columns and rows in Series and DataFrames
 
 ### Data Loading and Storage
-Open
+Open 2_Data_Loading_and_Storage.ipynb
 This chapter introduces how to load plain text data files into pandas DataFrames and how to handle common data integrity issues such as missing values or ignore rows or columns with irrelevant information.  These skills are important as the first step in any data workflow is to
 load the information in order to analyze or manipulate it later.
 
