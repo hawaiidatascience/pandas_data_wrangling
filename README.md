@@ -74,6 +74,8 @@ Lets begin with the Jupyter Notebook 0_Introdcutions.ipynb to introduce the basi
 
 NOTE - if you downloaded the materials and are using Anaconda on your own machine you will need to install pandas as the materials instruct - if you are using the cloud hosted materials pandas is already installed.
 
+---
+
 ### Pandas Data Structures
 Open 1_pandas_Data_structures.ipynb.
 This chapter introduces the Python pandas modules and its primary data structures the “Series” and “DataFrame” and how to manipulate these data structures.  These concepts and skills are necessary to working with and analyzing tabular data and provide the foundation for everything else in this module.
@@ -82,6 +84,8 @@ This chapter introduces the Python pandas modules and its primary data structure
 * Learn about the pandas Series and DataFrames concepts
 * Understand the difference between pandas Series and DataFrames
 * Learner will be able to: Create Series and DataFrames, Index Series and DataFrames, Access data within Series and DataFrames, Modify data within Series and DataFrames, Add and Modify columns and rows in Series and DataFrames
+
+---
 
 ### Data Loading and Storage
 Open 2_Data_Loading_and_Storage.ipynb
@@ -96,6 +100,7 @@ load the information in order to analyze or manipulate it later.
 * Skip loading undesired data from a file into a DataFrame
 * Writing DataFrames to a text file
 
+---
 
 ### DataFrame Attributes and Arithmetic
 Open 3_DataFrame_Attributes_andArithmetic.ipynb.
@@ -108,6 +113,8 @@ It is crucial to have a deep understanding of your data in order to draw meaning
 * Learn how to view subsets of a pandas DataFrames
 * Learn how to perform vectorized arthimetic operations on pandas DataFrames
 
+---
+
 ### Subsetting and Sorting
 Open 4_Subsetting_and_Sorting.ipynb
 This chapter covers the basics of subsetting data within a DataFrame and basic sorting.
@@ -116,6 +123,8 @@ This chapter covers the basics of subsetting data within a DataFrame and basic s
 * Learn to subset data using comparison and boolean methods for a pandas DataFrame
 * Learn how to sort data by index or value within a pandas DataFrame
 * Learn how to plot data using pyplot for basic charting using data within a pandas DataFrame
+
+---
 
 ### Data Preperation and Cleaning
 Open 5_Data_Preparation_and_Cleaning.ipynb
@@ -127,6 +136,8 @@ This chapter covers the basic use case of needing to prepare or clean a set of d
 * Learn how to reindex a pandas DataFrame
 * Learn how to handle missing data (identifying, filtering and filling)
 
+---
+
 ### Function Application and Mapping
 Open 6_Function_Application_and_Mapping.ipynb
 What we will learn in this chapter might be some of the most important concepts and skills that we will cover in this entire course. We will be tying much of what we have learned in previous chapters together, and the practicality will become clear as you read and work through the exercises.
@@ -136,6 +147,8 @@ Function application and mapping simply refers to processing the entries of a Da
 * Learn Global and Specific processing
 * Learn to split and group data
 * Learn to aggregate, filter and transform data
+
+---
 
 ### Combine DataFrames
 Open 7_Combining_DataFramews.ipynb
