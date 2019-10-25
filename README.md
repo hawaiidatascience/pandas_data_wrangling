@@ -114,6 +114,11 @@ It is crucial to have a deep understanding of your data in order to draw meaning
 * Learn how to perform vectorized arthimetic operations on pandas DataFrames
 
 ---
+### Jump to Data Camp  - Streamlined Data Ingestion With Pandas
+
+To reinforce and augment the Jupyter Notebook materials or perhaps instead of them it is recommend that your complete the Streamlined Data Ingestion With Pandas - Importing Data From Flat Files section. <https://www.datacamp.com/courses/streamlined-data-ingestion-with-pandas>
+
+---
 
 ### Subsetting and Sorting
 Open 4_Subsetting_and_Sorting.ipynb
@@ -158,3 +163,9 @@ In this chapter we will learn about four different strategies for combining data
 * Learn how to merge DataFrames and Series
 * Understand how to use inner and outer join functions
 * Learn how to concatenate DataFrames and understand the difference to merge.
+
+---
+
+### Jump to Data Camp - pandas Foundations
+
+It is recommended that your augment learning with the Data Camp "pandas Foundations- Data Ingestion and Inspection"  <https://www.datacamp.com/courses/pandas-foundations>
