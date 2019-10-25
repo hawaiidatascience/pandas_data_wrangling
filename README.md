@@ -1,292 +1,140 @@
 
 # Introduction to the `pandas` `Python` Package For Data Wrangling
 
-## What is Data Wrangling? Why pandas?
 
----
 
-*Data Wrangling* is the process of transforming your data from one form into another, usually with the intent of making it more suitable for analysis.
 
-`pandas` is the de facto package for wrangling your data. `pandas` provides an abundace of functionality for each step of the data wrangling workflow from reading and writing various files formats, to cleaning your data, to merging data sets, all of which we will learn how to do by the end of this course.
+## Pre-requisites
 
-<img src='images/pandas_architecture.png' width=400>
+* Completion of Module 0: Before you begin
+* The creation of a Data Camp account and signup for the Data Wrangling with Python track from HI-DSI
 
-# `pandas` Data Structures
+This course builds on the introductions to Python from https://www.datacamp.com/tracks/custom-data-science-institute-intro-courses-dr-stokes so if you find yourself struggling to understand some concepts it might be helpful to review the "Introduction to Python" course and "Introduction to Data Science in Python: Getting started in Python" chapter.
 
----
+## Module introduction.
 
+Data Wrangling is the process of transforming your data from one form into another, usually with the intent of making it more suitable for analysis.  This is a vital part in the Extract, Transform and Load (ETL) workflow and is encompassed in the data transformation portion of that workflow.
 
-**`Series` Vs. `DataFrames`**
-  1. `Series`: list-like objects that store data in a given order.
-  2. `DataFrames`: spreadsheet-like tables that contain one or more Series.
+Data transformation is the process of changing the format of data so that it can be used by different applications. This may mean a change from the format the data is stored in into the format needed by the application that will use the data.
 
-**`Series`**
-* To create a series from native `Python`  data structures we use the `pandas` `Series()` function
+### WHY SHOULD I CARE OR WANT DO THIS
 
-  <img src='images/seriesIndex.png' width=300>
+If you have ever worked with a set of data in an Excel spreadsheet, Google sheet or CSV file you have probably has to modify that data in some manner to use it.  You probably have needed to add or remove columns and rows or do some summations or different arithmetic functions to the data.  Excel and G-sheets work just fine for simple data.  But what do you do when you have thousands and millions of rows of data?  Or what if you have a bunch of the same type of dataset and your want to apply the same steps to each dataset or repeat this in the future?  Manually doing this work doesn't scale nor is what you did reproducible or easily shareable with others.
 
-**`Series` Attributes and Methods**
+So you using some of the tools presented here you will be able to scale, automate, document and reproduce your process of modifying your data as you move through from initial data to an analysis product.
 
-| Attribute |Description|
-|:----------|-----------|
-| `dtype`| return the dtype object of the underlying data |
-| `name`| return the name of the Series |
-| `size`| return the number of elements in the underlying data |
-| `values`| Return Series as ndarray or ndarray-like|
+Here you will learn the basics of using Python and the Pandas library for loading data into a “DataFrame” that can then be leveraged to perform transformations on the initial raw dataset to produce a data product that has been cleaned and formatted so that it may be used in further analysis and workflows.
 
+## Module learning outcomes
 
-| Method |Description|
-|:----------|-----------|
-| `add(other[, level, fill_value, axis])` | 	Addition of series and other, element-wise (binary operator add) |
-| `nlargest([n, keep])`| Return the largest n elements. |
-| `sort_values([axis, ascending, inplace, ...])`| Sort by the values along either axis |
-| `sum([axis, skipna, level, numeric_only, ...])`| 	Return the sum of the values for the requested axis |
-| `unique()`| Return unique values in the object |
+4.0.  Understand what python libraries and modules are and how to load and use them, particularly the “pandas” library
+4.1  Describe the “pandas” Series and DataFrame objects and perform loading plain text file data, handle missing data and writing data output to a file.
+4.2  Describe pandas DataFrame attributes and methods and perform data subsetting and vectorized arithmetic operations on pandas DataFrames.
+4.3  Perform data subsetting using boolean methods for pandas DataFrames, sorting of data by index or values and plot data as basic charts using the pyplot library.
+4.4  Perform dataType inspection and modification on a pandas DataFrame, utilize string methods to manipulate text values, reindex a DataFrame and identify, filter and fill missing data.
+4.5  Describe Global and Specific data processing and perform data splitting, grouping. aggregation,filtering and transformations.
+4.6  Describe merging  DataFrames and Series using inner and outer-join functions and perform DataFrame concatenations and merges.
 
-To call a Method or access an Attribute of the `Series` object, we use *dot* notation:
 
-```python
->>> s1.size
-4
->>> s1.unique()
-[1234 'DIAZEPAM' 3 '$32']
-```
+## Module Competencies
 
-More Attributes and Methods be found at the <a href="https://pandas.pydata.org/pandas-docs/version/0.22/generated/pandas.Series.html">pandas documentation</a> webpage.
+4.0  Use python the pandas python libraries and alias..
+4.1  Read a text file using pandas and output a new file.
+4.2  Subset data and execute vectorized arithmetic operations using pandas.
+4.3  Subset and sort data by index or values and plot data with the pyplot library.
+4.4  Manipulate string data values and identify, filter and fill missing data using pandas
+4.5  Split, group, aggregate, filter and transform data using pandas.
+4.6  Merge and concatenate data using pandas.
 
-**`DataFrames`**
-* To create a series from native `Python`  data structures we use the `pandas` `DataFrame()` function
+## Getting Started
 
-  <img src='images/pandasDataFrame.png' width=600>
+To get started we will be using learning materials in two formats:
 
-**`DataFrame` Attributes and Methods**
+1.) Jupyter Notebooks with sample datasets. (it is assumed you are familiar with Jupyter from module 0)
+2.) Data Camp courses.
 
-| Attribute |Description|
-|:----------|-----------|
-| `T`|  Transpose index and columns |
-| `dtype`|  Return the dtypes in this object |
-| `shape`| Return a tuple representing the dimensionality of the DataFrame |
-| `size`| number of elements in the NDFrame |
-| `values`| 	Numpy representation of NDFrame |
+The Juptyer Notebooks contain self contained "chapter" explanations of the concepts and along with executable code examples that you can run and modify to explore how Python and pandas work. In addition to the "chapters" there are notebooks that have Exercise solutions from each "chapter" as well as Practicals for each "chapter" to bring all the concepts together.  In order to access the Jupyter notebook materials you can either use this URL(https://mybinder.org/v2/gh/hawaiidatascience/pandas_data_wrangling/master) that links to a cloud hosted Jupyterhub workspace. NOTE that this is only a temporary workspace and will disappear once you disconnect from it.
+OR
+you can use Anaconda on your own computer and download the materials from this link (https://github.com/hawaiidatascience/pandas_data_wrangling/archive/master.zip) - this avenue allows you to keep the changes you make to any of the notebooks as you work through the course at your own pace.
 
-| Method |Description|
-|:----------|-----------|
-| `add(other[, axis, level, fill_value])`|  	Addition of dataframe and other, element-wise (binary operator add) |
-| `count([axis, level, numeric_only])`|  	Return Series with number of non-NA/null observations over requested axis |
-| `describe([percentiles, include, exclude])`| Generates descriptive statistics that summarize the central tendency, dispersion and shape of a dataset’s distribution, excluding NaN values.|
-|`head([n])`|Return the first n rows.|
+The Data Camp track that compliments the Jupyter Notebook materials is "Data Wrangling in Python" (https://www.datacamp.com/tracks/custom-data-wrangling-in-python).  This track has four course that cover the same materials as the Jupyter Notebooks with short videos, slides and small Exercises that
 
-- To call a method or access an attribute we again use *dot* notation.
 
-```python
->>> df2.values
-array([[1234, 'DIAZEPAM'],
-       [3210, 'CLONAZEPAM']], dtype=object)
->>> df2.count()
-doctor_id     2
-medication    2
-dtype: int64
-```
+## Let begin
 
-All `DataFrame` attributes and methods can be found at the <a href="https://pandas.pydata.org/pandas-docs/version/0.22/generated/pandas.DataFrame.html#pandas.DataFrame">pandas documentation</a> webpage.
+### Introduction
+Lets begin with the Jupyter Notebook 0_Introdcutions.ipynb to introduce the basic concepts of Data Wrangling and pandas.  
 
-**Accessing Data from the `DataFrame`**
+NOTE - if you downloaded the materials and are using Anaconda on your own machine you will need to install pandas as the materials instruct - if you are using the cloud hosted materials pandas is already installed.
 
-| Syntax                |   Meaning    |
-|:--------------------------|:-------------------|
-| `dataframe["col_name"]`    |  Return `Series` of "col_name"'s  |
-| `dataframe[["col_name_1", "col_name_2"] ]`    |  Returns `DataFrame` with  "col_name_1" and "col_name_2"|
-| `dataframe.loc["label",:]`| returns row indexed by "label" |
-| `dataframe.loc["label", ["col_3", 'col_5']]`| return entry indexed by "label", subsets columns to only "col_3" and "col_5" |
-| `dataframe.loc[["label_1", "label_2"], ['col_3', 'col_5']]`| returns lines with indices "label_1" and "label", subsets columns to only "col_3" and "col_5" |
-| `dataframe.iloc[23, [0, 1]]`| returns line 23, and only values of columns 0 and 1 |
-| `dataframe.iloc[[1,2], [0, 1]]`| returns lines 1 and 2, and only values of columns 0 and 1 |
+### Pandas Data Structures
+Open 1_pandas_Data_structures.ipynb.
+This chapter introduces the Python pandas modules and its primary data structures the “Series” and “DataFrame” and how to manipulate these data structures.  These concepts and skills are necessary to working with and analyzing tabular data and provide the foundation for everything else in this module.
 
-  <img src='images/DataFrameColumns.png' width=600>
+#### Outcomes:
+* Learn about the pandas Series and DataFrames concepts
+* Understand the difference between pandas Series and DataFrames
+* Learner will be able to: Create Series and DataFrames, Index Series and DataFrames, Access data within Series and DataFrames, Modify data within Series and DataFrames, Add and Modify columns and rows in Series and DataFrames
 
-**Modifying Series and DataFrames**
+### Data Loading and Storage
+Open
+This chapter introduces how to load plain text data files into pandas DataFrames and how to handle common data integrity issues such as missing values or ignore rows or columns with irrelevant information.  These skills are important as the first step in any data workflow is to
+load the information in order to analyze or manipulate it later.
 
-* Most of the pandas methods for modifying the data in a `Series` and `DataFrame` will, by default, not alter the original object, rather a **copy** with the desired changes is made. If you are confident of the operation you are performing on the object and do not care to make a copy, then many times you can pass the optional argument  "`inplace=True`" to the pandas method you are calling and the original object will be altered **inplace**.
+#### Outcomes:
 
-* To add columns to `DataFrames` we have 2 options:
+* Learn how to transfer data from plain text files (.csv) to pandas DataFrames
+* Understand what a plain text file is.
+* Handle missing data in a DataFrame
+* Skip loading undesired data from a file into a DataFrame
+* Writing DataFrames to a text file
 
-    1. Modify the `DataFrame` in place: use the `assign()` `DataFrame` method.
-    2. Make a new `DataFrame` from a copy of the original with the desired additions: first reference and then designate values to columns that don't yet exist.
 
-* We may drop both Rows and Columns from a `DataFrame` using the `drop()` method.
-  * The `drop()` method takes a positional parameter which is the label of the row or column that is going to be dropped.
-  * The `drop()` method will drop a row or a column depending on the value that the `axis` parameter is set to.
-    * If the `axis` parameter is set to 'columns' then we are dropping a column with the specified name, otherwise if the `axis` parameter is set to 'rows' then we are dropping a row with the specified name.
+### DataFrame Attributes and Arithmetic
+Open 3_DataFrame_Attributes_andArithmetic.ipynb.
+It is crucial to have a deep understanding of your data in order to draw meaningful insights from it. In this chapter we will see how to use the built in functionalities of pandas to begin exploring and transforming data. This will help identify patterns or potential flaws in the dataset and hopefully inspire or even answer some interesting questions.
 
-# Data Loading and Storage
+#### Outcomes:
 
----
+* Learn how to use a pandas DataFrame attributes in order to understand more about a dataset
+* Learn common pandas DataFrame methods to inspect the dataset to understand some basic properties such as (min,max,mean,sum..)
+* Learn how to view subsets of a pandas DataFrames
+* Learn how to perform vectorized arthimetic operations on pandas DataFrames
 
-
-Some of the parameters of `read_csv` and `read_table` can be seen below:
-
-<img src='images/read_csv_Summary.png' width=800>
-
-# `DataFrame` Attributes and Arithmetic
-
----
-
-**Summarizing Your Data**
-
-* Important Attributes:
-
-| Attribute |Description|
-|:----------|-----------|
-| `shape`| Return a tuple representing the dimensionality of the DataFrame. |
-| `size` | Return an int representing the number of elements in this object.  |
-| `dtypes` | Return the dtypes in the DataFrame. |
-
-* Important Methods:
-
-| Method|Description|
-|:----------|-----------|
-| `head()`| Return the first n rows. |
-| `tail()` | Return the last n rows. |
-| `min()`, `max()` | Computes the numeric (for numeric value) or alphanumeric (for object values) row-wise min, max in a Series or DataFrame|
-| `sum()`, `mean()`, `std()`, `var()`   |  Computes the row-wise sum, mean, standard deviation and variance in a `Series` or DataFrame|
-|`nlargest()`|	Return the first n rows ordered by the spceified columns in descending order. |
-| `count()` |  returns the number of non-NaN values in the in a `Series` or `DataFrame` |
-| `value_counts()` |  returns the frequency for each value in the `Series` |
-| `describe()` | Computes row-wise statistics |
-
-
-**Arithmetic and Data Alignment**
-
-* When executing an arithmetic operation between `Series` or `DataFrames`, the object will first be extended and then aligned by their indices and then the arithmetic will be applied in a pairwise fashion, this is called *vectorized arithmetic between `Series` or `DataFrames`*
-
-<img src='images/alignment_arithmetic_col.png' width=600>
-
-* When executing an arithmetic operation between constants and `Series` or `Dataframes`, the constant will be extended to a new `Series` or `DataFrame` to align with the first `Series` or `Dataframe` and then the arithmetic will be applied in a pairwise fashion, this is referred to as *broadcasting*
-
-<img src='images/alignment.png' width=600>
-
-# Subsetting and Sorting
-
-**Subsetting**
-
-* Comparison operators are ideal for querying and subsetting the `DataFrame`
-* We can subset a `Series` using another equally sized list (or a `Series`) of `Boolean`s
-
-![](images.filter_dataframe.png)
-
-**Sorting**
-
-* To sort a `DataFrame` by the values in one of its columns we use the [`pandas` `DataFrame` `sort_values()` method](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.sort_values.html)
-
-**Data Visualization**
-
-* The `plot` method that may be called by any `pandas` `DataFrame` is quite versatile and can make the following kinds of plots:
-
-| Kind |Description|
-|:----------|-----------|
-| `line`| line plot (default) |
-| `bar` | vertical bar plot  |
-| `barh` | horizontal bar plot |
-| `hist` | histogram |
-| `box` | boxplot  |
-| `kde` | Kernel Density Estimation plot |
-| `area` | area plot |
-| `pie` | pie plot |
-| `scatter` | scatter plot |
-| `hexbin` | hexbin plot |
-
-  * To learn more about the `plot` method please see the [pandas Documentation](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.plot.html#pandas.DataFrame.plot)
-
-# Data Preperation and Cleaning
-
-**Reindexing**
-
-* Reindexing a `DataFrame` or `Series` will create a **new** `pandas` object that is conformed to the new index
-* More information about the `reindex()` method is available [here](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.reindex.html)
-
-**Inspecting and Modifying Data Types**
-
-* Use the `DataFrame dtypes` attribute to inspect the `pandas` data types of each column
-* To cast a column of one type to another compatible type we can use the `astype() Series` method
-
-**Series String Methods**
-
-* `Series` contains various `string` processing methods that can be accessed using a `Series`’s `str` property.
-* You can use .__`TAB`__ to explore these methods.
-* Or you can see all of the `Series str` methods and descriptions [here](https://pandas-docs.github.io/pandas-docs-travis/api.html#string-handling)
-
-**Handling Missing Data**
-
-* The  `isnull` method is often useful to find where all the `NaNs` precisely are in the `pandas` `DataFrame` or `Series`
-
-* **Filtering**
-
-  * You can discard missing values using `isnull()` result and subsetting
-
-* **Filling**
-
-  * There  are two conventional approaches for filling missing value:
-
-    1. Filling the value with a constant
-    2. Filling the value dynamically with something computed on the fly
-
-# Function Application and Mapping
-
-* **Global Processing**
-  * To apply a function to every row or column in a `DataFrame` we can use the `apply()` method
-  * To apply a function to every element in a `Series` we can use the `map()` method
-  * To apply a function to every element in a `DataFrame` we can use the `applymap()` method
-
-* **Group Specific Processing**
-
-  * The `groupby()` method is used to group the data using values on one or more columns
-
-  * `groupby()` is often applied in the context of the data processing paradigm called "split-apply-combine"
-    * **Split**: you need to split the data into chunks defined using one or more columns
-    * **Apply**: apply some operation on the chunks generated.
-    * **Combine**: combine the results of the applied operation into a new `DataFrame`
-
-  * There are 3 common classes of split-apply-combine operations that can be applied to group data.
-
-    1. __Aggregations__ generate a single value for each group
-
-    2.  __Transformations__ convert the data and generate a group of the same size as the original group.
-
-    3.  __Filters__ retain or discard a group based on group-specific boolean computations.
-
-# Combining `DataFrames`
-
----
-
-
-**Merging**
-
-* The `DataFrame` method  [`merge()`](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.merge.html) implements merging `DataFrames`.
-
-* `merge()` operates by default on `columns` with the same name across the `DataFrames`, that is the intersection of the columns.
-
-  * This default behavior can be modified by explicitly passing a column name (label) to the parameter `on`
-
-* When merging `DataFrames` there are 4 principal strategies, and those are:
-
-| Merge strategy | Description |
-|:--------|:-------------|
-| `inner` | Keep keys that are present in both tables (intersection) |
-| `left` | Keep keys found in left table and set the values in the right table to `NaN`  |
-| `right` | Keep keys found in right table set values in the left table to `NaN` |
-| `outer` | Keep the union of keys found in both right and left tables |
-
-* `merge()` can perform a different merging strategy by setting the `how` parameter
-
-**Concatentation**
-
-* Concatenation in Python is done using the `concat()` `pandas` function.
-
-* Concatenation is an outer or inner join with keys restricted to either the indices or columns.
-
-* By setting `axis=0`(default), `concat()` will stack rows,  while `axis=1` will tell `concat()` to stack columns. The `join` parameter can either be set to 'outer' (default) or 'inner', to perfrom an outer or inner join respectively.
-
-
-```python
-
-```
+### Subsetting and Sorting
+Open 4_Subsetting_and_Sorting.ipynb
+This chapter covers the basics of subsetting data within a DataFrame and basic sorting.
+
+#### Outcomes:
+* Learn to subset data using comparison and boolean methods for a pandas DataFrame
+* Learn how to sort data by index or value within a pandas DataFrame
+* Learn how to plot data using pyplot for basic charting using data within a pandas DataFrame
+
+### Data Preperation and Cleaning
+Open 5_Data_Preparation_and_Cleaning.ipynb
+This chapter covers the basic use case of needing to prepare or clean a set of data for further analysis using pandas.
+
+#### Outcomes:
+* Learn to inspect and modify dataTypes in a pandas DataFrame
+* Learn how to utilize the pandas Series ‘string’ methods to manipulate string data
+* Learn how to reindex a pandas DataFrame
+* Learn how to handle missing data (identifying, filtering and filling)
+
+### Function Application and Mapping
+Open 6_Function_Application_and_Mapping.ipynb
+What we will learn in this chapter might be some of the most important concepts and skills that we will cover in this entire course. We will be tying much of what we have learned in previous chapters together, and the practicality will become clear as you read and work through the exercises.
+Function application and mapping simply refers to processing the entries of a DataFrame to better suite your needs.
+
+#### Outcomes:
+* Learn Global and Specific processing
+* Learn to split and group data
+* Learn to aggregate, filter and transform data
+
+### Combine DataFrames
+Open 7_Combining_DataFramews.ipynb
+In this chapter we will learn about four different strategies for combining data sets and the methods `pandas` has implemented to support them. The strategies we will cover will be powerful enough to handle almost all of the types of combining you will need to do in practice.
+
+#### Outcomes:
+* Learn how to merge DataFrames and Series
+* Understand how to use inner and outer join functions
+* Learn how to concatenate DataFrames and understand the difference to merge.
