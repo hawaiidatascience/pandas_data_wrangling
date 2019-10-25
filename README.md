@@ -43,12 +43,18 @@ Here you will learn the basics of using Python and the Pandas library for loadin
 
 ## Module Competencies
 
-4.0  Use python the pandas python libraries and alias..
+4.0  Use python the pandas python libraries and alias.
+
 4.1  Read a text file using pandas and output a new file.
+
 4.2  Subset data and execute vectorized arithmetic operations using pandas.
+
 4.3  Subset and sort data by index or values and plot data with the pyplot library.
+
 4.4  Manipulate string data values and identify, filter and fill missing data using pandas
+
 4.5  Split, group, aggregate, filter and transform data using pandas.
+
 4.6  Merge and concatenate data using pandas.
 
 ## Getting Started
