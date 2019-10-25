@@ -26,11 +26,17 @@ Here you will learn the basics of using Python and the Pandas library for loadin
 ## Module learning outcomes
 
 4.0.  Understand what python libraries and modules are and how to load and use them, particularly the “pandas” library
+
 4.1  Describe the “pandas” Series and DataFrame objects and perform loading plain text file data, handle missing data and writing data output to a file.
+
 4.2  Describe pandas DataFrame attributes and methods and perform data subsetting and vectorized arithmetic operations on pandas DataFrames.
+
 4.3  Perform data subsetting using boolean methods for pandas DataFrames, sorting of data by index or values and plot data as basic charts using the pyplot library.
+
 4.4  Perform dataType inspection and modification on a pandas DataFrame, utilize string methods to manipulate text values, reindex a DataFrame and identify, filter and fill missing data.
+
 4.5  Describe Global and Specific data processing and perform data splitting, grouping. aggregation,filtering and transformations.
+
 4.6  Describe merging  DataFrames and Series using inner and outer-join functions and perform DataFrame concatenations and merges.
 
 
