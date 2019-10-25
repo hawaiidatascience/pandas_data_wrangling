@@ -1,6 +1,6 @@
 
 ![alt text](https://github.com/hawaiidatascience/pandas_data_wrangling/raw/master/images/hidsi-header.png "Hawaii Data Science Institute")
-# Introduction to the `pandas` `Python` Package For Data Wrangling
+# Introduction to the Pandas Python Package For Data Wrangling
 
 ## Pre-requisites
 
