@@ -2,6 +2,7 @@
 ![alt text](https://github.com/hawaiidatascience/pandas_data_wrangling/raw/master/images/hidsi-header.png "Hawaii Data Science Institute")
 # Introduction to the Pandas Python Package For Data Wrangling
 
+
 ## Pre-requisites
 
 * Completion of Module 0: Before you begin
@@ -66,7 +67,7 @@ The Data Camp track that compliments the Jupyter Notebook materials is "Data Wra
 
 The Data Camp materials may be more remedial than the Jupyter Notebooks so try them both to see what works best for you.
 
-## Let begin
+# Lets begin
 
 ### Introduction
 Lets begin with the Jupyter Notebook 0_Introdcutions.ipynb to introduce the basic concepts of Data Wrangling and pandas.  
