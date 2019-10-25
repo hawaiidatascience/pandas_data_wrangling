@@ -54,13 +54,13 @@ Here you will learn the basics of using Python and the Pandas library for loadin
 
 To get started we will be using learning materials in two formats:
 
-1.) Jupyter Notebooks with sample datasets. (it is assumed you are familiar with Jupyter from module 0)
-
-2.) Data Camp courses.
+#### 1.) Jupyter Notebooks with sample datasets. (it is assumed you are familiar with Jupyter from module 0)
 
 The Juptyer Notebooks contain self contained "chapter" explanations of the concepts and along with executable code examples that you can run and modify to explore how Python and pandas work. In addition to the "chapters" there are notebooks that have Exercise solutions from each "chapter" as well as Practicals for each "chapter" to bring all the concepts together.  In order to access the Jupyter notebook materials you can either use this URL(<https://mybinder.org/v2/gh/hawaiidatascience/pandas_data_wrangling/master>) that links to a cloud hosted Jupyterhub workspace. NOTE that this is only a temporary workspace and will disappear once you disconnect from it.
 OR
 you can use Anaconda on your own computer and download the materials from this link (<https://github.com/hawaiidatascience/pandas_data_wrangling/archive/master.zip>) - this avenue allows you to keep the changes you make to any of the notebooks as you work through the course at your own pace.
+
+#### 2.) Data Camp courses.
 
 The Data Camp track that compliments the Jupyter Notebook materials is "Data Wrangling in Python" (<https://www.datacamp.com/tracks/custom-data-wrangling-in-python>).  This track has four course that cover the same materials as the Jupyter Notebooks with short videos, slides and small Exercises.
 
