@@ -27,7 +27,8 @@ Here you will learn the basics of using Python and the Pandas library for loadin
 ## Module learning outcomes
 
 <details><summary>More</summary>
-  
+<p>
+
 4.0.  Understand what python libraries and modules are and how to load and use them, particularly the “pandas” library
 
 4.1  Describe the “pandas” Series and DataFrame objects and perform loading plain text file data, handle missing data and writing data output to a file.
@@ -48,7 +49,8 @@ Here you will learn the basics of using Python and the Pandas library for loadin
 ## Module Competencies
 
 <details><summary>More</summary>
-  
+<p>
+
 4.0  Use python the pandas python libraries and alias.
 
 4.1  Read a text file using pandas and output a new file.
@@ -73,7 +75,8 @@ To get started we will be using learning materials in two formats:
 #### 1.) Jupyter Notebooks with sample datasets. (it is assumed you are familiar with Jupyter from module 0)
 
 <details><summary>More</summary>
-  
+<p>
+
 The Juptyer Notebooks contain self contained "chapter" explanations of the concepts and along with executable code examples that you can run and modify to explore how Python and pandas work. In addition to the "chapters" there are notebooks that have Exercise solutions from each "chapter" as well as Practicals for each "chapter" to bring all the concepts together.  In order to access the Jupyter notebook materials you can either use this URL(<https://mybinder.org/v2/gh/hawaiidatascience/pandas_data_wrangling/master>) that links to a cloud hosted Jupyterhub workspace. NOTE that this is only a temporary workspace and will disappear once you disconnect from it.
 OR
 you can use Anaconda on your own computer and download the materials from this link (<https://github.com/hawaiidatascience/pandas_data_wrangling/archive/master.zip>) - this avenue allows you to keep the changes you make to any of the notebooks as you work through the course at your own pace.
@@ -86,6 +89,7 @@ Do Note that when running code cells within the training materials you will need
 #### 2.) Data Camp courses.
 
 <details><summary>More</summary>
+<p>
 
 The Data Camp track that compliments the Jupyter Notebook materials is "Data Wrangling in Python" (<https://www.datacamp.com/tracks/custom-data-wrangling-in-python>).  This track has four course that cover the same materials as the Jupyter Notebooks with short videos, slides and small Exercises.
 
@@ -106,6 +110,7 @@ NOTE - if you downloaded the materials and are using Anaconda on your own machin
 
 ### Pandas Data Structures
 <details><summary>More</summary>
+<p>
   
 Open 1_pandas_Data_structures.ipynb.
 This chapter introduces the Python pandas modules and its primary data structures the “Series” and “DataFrame” and how to manipulate these data structures.  These concepts and skills are necessary to working with and analyzing tabular data and provide the foundation for everything else in this module.
@@ -122,7 +127,7 @@ This chapter introduces the Python pandas modules and its primary data structure
 
 ### Data Loading and Storage
 <details><summary>More</summary>
-  
+<p> 
   
 Open 2_Data_Loading_and_Storage.ipynb
 This chapter introduces how to load plain text data files into pandas DataFrames and how to handle common data integrity issues such as missing values or ignore rows or columns with irrelevant information.  These skills are important as the first step in any data workflow is to
@@ -144,7 +149,8 @@ load the information in order to analyze or manipulate it later.
 ### DataFrame Attributes and Arithmetic
 
 <details><summary>More</summary>
-  
+<p>
+ 
 Open 3_DataFrame_Attributes_andArithmetic.ipynb.
 It is crucial to have a deep understanding of your data in order to draw meaningful insights from it. In this chapter we will see how to use the built in functionalities of pandas to begin exploring and transforming data. This will help identify patterns or potential flaws in the dataset and hopefully inspire or even answer some interesting questions.
 
@@ -168,7 +174,8 @@ To reinforce and augment the Jupyter Notebook materials or perhaps instead of th
 ### Subsetting and Sorting
 
 <details><summary>More</summary>
-  
+<p>
+ 
 Open 4_Subsetting_and_Sorting.ipynb
 This chapter covers the basics of subsetting data within a DataFrame and basic sorting.
 
@@ -185,7 +192,8 @@ This chapter covers the basics of subsetting data within a DataFrame and basic s
 ### Data Preperation and Cleaning
 
 <details><summary>More</summary>
-  
+<p>
+ 
 Open 5_Data_Preparation_and_Cleaning.ipynb
 This chapter covers the basic use case of needing to prepare or clean a set of data for further analysis using pandas.
 
@@ -200,7 +208,8 @@ This chapter covers the basic use case of needing to prepare or clean a set of d
 ### Function Application and Mapping
 
 <details><summary>More</summary>
-  
+<p>
+ 
 Open 6_Function_Application_and_Mapping.ipynb
 What we will learn in this chapter might be some of the most important concepts and skills that we will cover in this entire course. We will be tying much of what we have learned in previous chapters together, and the practicality will become clear as you read and work through the exercises.
 Function application and mapping simply refers to processing the entries of a DataFrame to better suite your needs.
@@ -215,7 +224,8 @@ Function application and mapping simply refers to processing the entries of a Da
 ### Combine DataFrames
 
 <details><summary>More</summary>
-  
+<p>
+
 Open 7_Combining_DataFramews.ipynb
 In this chapter we will learn about four different strategies for combining data sets and the methods `pandas` has implemented to support them. The strategies we will cover will be powerful enough to handle almost all of the types of combining you will need to do in practice.
 
