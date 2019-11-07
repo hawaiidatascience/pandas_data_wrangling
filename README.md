@@ -239,3 +239,6 @@ In this chapter we will learn about four different strategies for combining data
 ### Jump to Data Camp - pandas Foundations
 
 It is recommended that your augment learning with the Data Camp "pandas Foundations- Data Ingestion and Inspection"  <https://www.datacamp.com/courses/pandas-foundations>
+
+
+
