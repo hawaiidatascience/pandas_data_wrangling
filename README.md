@@ -203,6 +203,8 @@ This chapter covers the basic use case of needing to prepare or clean a set of d
 * Learn how to reindex a pandas DataFrame
 * Learn how to handle missing data (identifying, filtering and filling)
 
+</p>
+</details>
 ---
 
 ### Function Application and Mapping
@@ -219,6 +221,8 @@ Function application and mapping simply refers to processing the entries of a Da
 * Learn to split and group data
 * Learn to aggregate, filter and transform data
 
+</p>
+</details>
 ---
 
 ### Combine DataFrames
@@ -234,6 +238,8 @@ In this chapter we will learn about four different strategies for combining data
 * Understand how to use inner and outer join functions
 * Learn how to concatenate DataFrames and understand the difference to merge.
 
+</p>
+</details>
 ---
 
 ### Jump to Data Camp - pandas Foundations
