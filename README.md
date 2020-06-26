@@ -86,13 +86,11 @@ Do Note that when running code cells within the training materials you will need
 
 #### 2.) Data Camp courses.
 
-<details><summary>More</summary>
-
 The Data Camp track that compliments the Jupyter Notebook materials is "Data Wrangling in Python" (<https://www.datacamp.com/tracks/custom-data-wrangling-in-python>).  This track has four course that cover the same materials as the Jupyter Notebooks with short videos, slides and small Exercises.
 
 The Data Camp materials may be more remedial than the Jupyter Notebooks so try them both to see what works best for you.
 
-</details>
+----
 
 # Lets begin
 
