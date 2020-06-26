@@ -206,6 +206,7 @@ This chapter covers the basic use case of needing to prepare or clean a set of d
 
 </p>
 </details>
+
 ---
 
 ### Function Application and Mapping
