@@ -5,7 +5,6 @@
 
 ## Pre-requisites
 
-* Completion of Module 0: Before you begin
 * The creation of a Data Camp account and signup for the Data Wrangling with Python track from HI-DSI
 
 This course builds on the introductions to Python from <https://www.datacamp.com/tracks/custom-data-science-institute-intro-courses-dr-stokes> so if you find yourself struggling to understand some concepts it might be helpful to review the "Introduction to Python" course and "Introduction to Data Science in Python: Getting started in Python" chapter.
@@ -72,19 +71,18 @@ Here you will learn the basics of using Python and the Pandas library for loadin
 
 To get started we will be using learning materials in two formats:
 
-#### 1.) Jupyter Notebooks with sample datasets. (it is assumed you are familiar with Jupyter from module 0)
-
-<details><summary>More</summary>
+#### 1.) Jupyter Notebooks with sample datasets. (it is assumed you are familiar with Jupyter)
 <p>
 
 The Juptyer Notebooks contain self contained "chapter" explanations of the concepts and along with executable code examples that you can run and modify to explore how Python and pandas work. In addition to the "chapters" there are notebooks that have Exercise solutions from each "chapter" as well as Practicals for each "chapter" to bring all the concepts together.  In order to access the Jupyter notebook materials you can either use this URL <https://mybinder.org/v2/gh/hawaiidatascience/pandas_data_wrangling/master>  that links to a cloud hosted Jupyterhub workspace. NOTE that this is only a temporary workspace and will disappear once you disconnect from it.
+
 OR
+
 you can use Anaconda on your own computer and download the materials from this link  <https://github.com/hawaiidatascience/pandas_data_wrangling/archive/master.zip> - this avenue allows you to keep the changes you make to any of the notebooks as you work through the course at your own pace.
 
 Do Note that when running code cells within the training materials you will need to run the cells in order starting at the top of a notebook since the operations can rely on the execution of previous cells as you get further down the notebook.  (so if you run into an error be sure you have run all the code cells that came before – especially the loading of pandas).
 
 </p>
-</details>
 
 #### 2.) Data Camp courses.
 
