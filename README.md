@@ -165,6 +165,7 @@ It is crucial to have a deep understanding of your data in order to draw meaning
 </details>
 
 ---
+
 ### Jump to Data Camp  - Streamlined Data Ingestion With Pandas
 
 To reinforce and augment the Jupyter Notebook materials or perhaps instead of them it is recommend that your complete the Streamlined Data Ingestion With Pandas - Importing Data From Flat Files section. <https://www.datacamp.com/courses/streamlined-data-ingestion-with-pandas>
@@ -223,6 +224,7 @@ Function application and mapping simply refers to processing the entries of a Da
 
 </p>
 </details>
+
 ---
 
 ### Combine DataFrames
@@ -240,6 +242,7 @@ In this chapter we will learn about four different strategies for combining data
 
 </p>
 </details>
+
 ---
 
 ### Jump to Data Camp - pandas Foundations
